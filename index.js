@@ -3,7 +3,6 @@ const fs = require("fs");
 
 http
   .createServer(function (req, res) {
-    console.log(req.url);
     if (req.url === "/") {
       html = fs.readFileSync("index.html");
     } else if (req.url === "/about") {
